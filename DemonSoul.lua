@@ -1,5 +1,5 @@
 -- Variables : 
-valeur = true
+global valeur = true
 
 positionSusamaru = {
     Vector3.new(67.3531, 21.262, -395.083),
