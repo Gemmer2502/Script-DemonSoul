@@ -11,19 +11,21 @@ positionSusamaru = {
     Vector3.new(135.739, 21.262, -263.188),
 }
 
--- Fonction principale pour déplacer le joueur
-spawn(function()
+-- Fonctions :
+
+fonction cheat
     while valeur do
         for _, positionSusamaru in ipairs(positionSusamaru) do
             game.Players.LocalPlayer.Character:MoveTo(positionSusamaru)
             task.wait(1)
         end
     end
-end)
+end
+-- Fonction principale pour déplacer le joueur
 
--- Fonction qui arrête la boucle si la touche "=" est pressée
 game:GetService("UserInputService").InputBegan:Connect(function(input)
     if input.KeyCode == Enum.KeyCode.Equals then
         valeur = false
     end
 end)
+-- Fonction qui arrête la boucle si la touche "=" est pressée
