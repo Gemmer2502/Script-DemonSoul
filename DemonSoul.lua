@@ -65,6 +65,9 @@ BouttonSusamaru.MouseButton1Click:Connect(function()
         positions = {}  -- Réinitialiser la table des positions
         running = true
         for _, positionSusamaru in ipairs(positionSusamaru) do
+            if nombres == 7 then
+                nombres = 0
+            end
             nombres = nombres + 1
             positions[nombres] = positionSusamaru  -- Ajout des positions à la table
         end
