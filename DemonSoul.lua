@@ -1,5 +1,5 @@
 -- Variables : 
-global valeur = true
+global truc = true
 
 positionSusamaru = {
     Vector3.new(67.3531, 21.262, -395.083),
@@ -18,7 +18,7 @@ cheat()
 -- Fonctions :
 
 function cheat()
-    while valeur do
+    while truc do
         for _, positionSusamaru in ipairs(positionSusamaru) do
             game.Players.LocalPlayer.Character:MoveTo(positionSusamaru)
             task.wait(1)
