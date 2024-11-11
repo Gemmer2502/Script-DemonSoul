@@ -18,7 +18,7 @@ cheat()
 -- Fonctions :
 
 function cheat()
-    while valeur do
+    while local valeur do
         for _, positionSusamaru in ipairs(positionSusamaru) do
             game.Players.LocalPlayer.Character:MoveTo(positionSusamaru)
             task.wait(1)
