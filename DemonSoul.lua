@@ -17,6 +17,16 @@ positionSusamaru = {
     [7] = Vector3.new(135.739, 21.262, -263.188),
 }
 
+positionYahaba = {
+    [1] = Vector3.new(69.8467, 24.0616, -350.076)
+    [2] = Vector3.new(92.2988, 24.0616, -331.055)
+    [3] = Vector3.new(94.2783, 24.0616, -293.35)
+    [4] = Vector3.new(80.541, 24.0616, -263.942)
+    [5] = Vector3.new(133.126, 24.0616, -396.738)
+    [6] = Vector3.new(153.263, 24.0616, -375.259)
+    [7] = Vector3.new(153.444, 24.0616, -332.631)
+}
+
 
 -------------------
 -----Instances-----
@@ -29,7 +39,6 @@ ContourTitrePage1 = Instance.new("TextLabel", Page1)
 TitrePage1 = Instance.new("TextLabel", ContourTitrePage1)
 Boutton1 = Instance.new("TextButton", Page1)
 Page2 = Instance.new("Frame", Menu)
-BouttonSusamaru = Instance.new("TextButton", Page2)
 MenuDeroulant = Instance.new("Frame", Page2)
 Cible = Instance.new("TextLabel", MenuDeroulant)
 Bouttons = {}
@@ -90,7 +99,7 @@ Cible.Text = "Choisi ta cible"
 Cible.TextColor3 = Color3.fromRGB(255, 255, 255)
 Cible.BackgroundTransparency = 1
 
-local characters = {"Susamaru", "Stop"}
+local characters = {"Susamaru", "Stop", "Yahaba"}
 local yOffset = 0.15
 
 for i, character in ipairs(characters) do
@@ -101,7 +110,7 @@ for i, character in ipairs(characters) do
     button.BackgroundColor3 = Color3.fromRGB(100, 100, 100)
     button.TextColor3 = Color3.fromRGB(255, 255, 255)
     button.MouseButton1Click:Connect(function()
-        Cible.Text = "Selected: " .. character
+        Cible.Text = "Choisi: " .. character
         currentCharacter = character
         MenuDeroulant.Visible = false
     end)
