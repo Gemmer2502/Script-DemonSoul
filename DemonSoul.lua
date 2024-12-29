@@ -125,19 +125,19 @@ while true do
     if currentCharacter == "Susamaru" then
         for _, pos in ipairs(positionSusamaru) do
             game.Players.LocalPlayer.Character:MoveTo(pos)
-            task.wait(1)
+            task.wait(0.5)
         end
     end
 
     if currentCharacter == "Yahaba" then
         for _, pos in ipairs(positionYahaba) do
             game.Players.LocalPlayer.Character:MoveTo(pos)
-            task.wait(1)
+            task.wait(0.5)
         end
     end
 
     if currentCharacter == "Stop" then
         print("STOP !!!!!!")
     end
-    task.wait(1)
+    task.wait(0.1)
 end
