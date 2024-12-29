@@ -99,7 +99,7 @@ Cible.Text = "Choisi ta cible"
 Cible.TextColor3 = Color3.fromRGB(255, 255, 255)
 Cible.BackgroundTransparency = 1
 
-local characters = {"Susamaru", "Stop", "Yahaba"}
+local characters = {"Stop", "Susamaru", "Yahaba"}
 local yOffset = 0.15
 
 for i, character in ipairs(characters) do
@@ -124,6 +124,13 @@ end
 while true do
     if currentCharacter == "Susamaru" then
         for _, pos in ipairs(positionSusamaru) do
+            game.Players.LocalPlayer.Character:MoveTo(pos)
+            task.wait(1)
+        end
+    end
+
+    if currentCharacter == "Yahaba" then
+        for _, pos in ipairs(positionYahaba) do
             game.Players.LocalPlayer.Character:MoveTo(pos)
             task.wait(1)
         end
